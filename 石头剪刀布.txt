@@ -1,0 +1,22 @@
+
+""""
+与电脑比赛出拳
+1-石头，2-剪刀，3-布
+
+""""
+import random
+player = int(input("输入1到三的整数 "))
+computer = random.randint(1,3)
+print("玩家出的拳为%d,电脑出的拳头为%d" % (player,computer))
+#玩家赢
+if ((player == 1 and computer == 2)
+        or (player == 2 and computer == 3)
+        or (player == 3 and computer == 1)):
+    print("你赢了")
+
+#平局
+elif player == computer:
+    print("平局")
+#输了
+else:
+    print("你输了")
