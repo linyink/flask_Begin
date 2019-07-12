@@ -12,7 +12,7 @@ print("玩家出的拳为%d,电脑出的拳头为%d" % (player,computer))
 if ((player == 1 and computer == 2)
         or (player == 2 and computer == 3)
         or (player == 3 and computer == 1)):
-    print("你赢了")
+    print("你赢了") 
 
 #平局
 elif player == computer:
